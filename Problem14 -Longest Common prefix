@@ -1,0 +1,11 @@
+class Solution:
+    def longestcommonprefix(self,str1):
+        result =""
+        for i in range(len(str1[0])):   # iterateing thrui every index 
+            for s in str1:  # from each other string
+                if s[i]!=str1[0][i] or i==len(s):  # move or part to bedore to check the endof short string
+                    return result
+            result = result+str1[0][i]
+
+
+    
